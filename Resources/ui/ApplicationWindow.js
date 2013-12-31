@@ -21,6 +21,8 @@ function ApplicationWindow() {
 	});
 	detailWindow.add(detailView);
 	
+	///unable to find docs for ActionBarPlacement, so currently the only way I could create the overFlow menu on the right was to add more than 3 actions
+	
 	detailWindow.addAction('Action 1', null, function(e){
 		alert('clicked action 1');
 	});
@@ -30,15 +32,15 @@ function ApplicationWindow() {
 	});
 	
 	detailWindow.addAction('Action 3', null, function(e){
-		alert('clicked action 2');
+		alert('clicked action 3');
 	});
 	
 	detailWindow.addAction('Action 4', null, function(e){
-		alert('clicked action 2');
+		alert('clicked action 4');
 	});
 	
 	detailWindow.addAction('Action 5', null, function(e){
-		alert('clicked action 2');
+		alert('clicked action 5');
 	});
 	
 	navGroup.setRootWindow(masterWindow);
