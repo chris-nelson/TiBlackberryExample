@@ -29,6 +29,18 @@ function ApplicationWindow() {
 		alert('clicked action 2');
 	});
 	
+	detailWindow.addAction('Action 3', null, function(e){
+		alert('clicked action 2');
+	});
+	
+	detailWindow.addAction('Action 4', null, function(e){
+		alert('clicked action 2');
+	});
+	
+	detailWindow.addAction('Action 5', null, function(e){
+		alert('clicked action 2');
+	});
+	
 	navGroup.setRootWindow(masterWindow);
 	
 	///swipe dowm from top to see app menu. app menu is shown throughout all windows
