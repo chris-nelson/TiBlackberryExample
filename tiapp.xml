@@ -10,8 +10,8 @@
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
-    <guid>e2561035-1e87-408e-9d8c-433fdbdb1121</guid>
+    <analytics>false</analytics>
+    <guid>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <modules/>
     <deployment-targets>
