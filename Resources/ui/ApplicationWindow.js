@@ -23,23 +23,23 @@ function ApplicationWindow() {
 	
 	///unable to find docs for ActionBarPlacement, so currently the only way I could create the overFlow menu on the right was to add more than 3 actions
 	
-	detailWindow.addAction('Action 1', null, function(e){
+	detailWindow.addAction('Action 1', 'images/icon-globe2.png', function(e){
 		alert('clicked action 1');
 	});
 	
-	detailWindow.addAction('Action 2', null, function(e){
+	detailWindow.addAction('Action 2', 'images/icon-flying.png', function(e){
 		alert('clicked action 2');
 	});
 	
-	detailWindow.addAction('Action 3', null, function(e){
+	detailWindow.addAction('Action 3', 'images/icon-fuel.png', function(e){
 		alert('clicked action 3');
 	});
 	
-	detailWindow.addAction('Action 4', null, function(e){
+	detailWindow.addAction('Action 4', 'images/icon-headphones.png', function(e){
 		alert('clicked action 4');
 	});
 	
-	detailWindow.addAction('Action 5', null, function(e){
+	detailWindow.addAction('Action 5', 'images/icon-info.png', function(e){
 		alert('clicked action 5');
 	});
 	
@@ -48,9 +48,9 @@ function ApplicationWindow() {
 	///swipe dowm from top to see app menu. app menu is shown throughout all windows
 	var appMenu = Ti.UI.BlackBerry.createApplicationMenu({
     items: [
-        {title: 'Option 1'},
-        {title: 'Option 2'},
-        {title:'Option 3'}
+        {title: 'Option 1', icon:'images/icon-globe2.png'},
+        {title: 'Option 2', icon:'images/icon-info.png'},
+        {title: 'Option 3', icon:'images/icon-flying.png'}
     	]
 	});
 
@@ -74,6 +74,23 @@ function ApplicationWindow() {
 				break;		
 		}
 	});
+	
+	/* How to close the last window
+  	*
+  	* navGroup.pop();
+  	*/
+ 
+ 	/*
+	* How remove a specific window
+ 	*
+ 	* navGroup.remove(detailWindow);
+ 	*/
+ 
+ 	/*
+ 	* How to close the NavigationGroup
+ 	*
+ 	* navGroup.close()
+ 	*/
 
 	return navGroup;
 };
