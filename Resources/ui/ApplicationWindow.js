@@ -24,10 +24,16 @@ function ApplicationWindow() {
 	var rightBtn = Ti.UI.BlackBerry.createNavButton({
 		title : "right"
 	});
+	rightBtn.addEventListener('click', function () {
+		alert("I'm rightBtn");
+	});
 	detailWindow.setRightNavButton(rightBtn);
 
 	var leftBtn = Ti.UI.BlackBerry.createNavButton({
 		title : "Left"
+	});
+	leftBtn.addEventListener('click', function () {
+		alert("I'm leftBtn");
 	});
 	detailWindow.setLeftNavButton(leftBtn);
 	
