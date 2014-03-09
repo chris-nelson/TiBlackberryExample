@@ -21,6 +21,16 @@ function ApplicationWindow() {
 	});
 	detailWindow.add(detailView);
 	
+	var rightBtn = Ti.UI.BlackBerry.createNavButton({
+		title : "right"
+	});
+	detailWindow.setRightNavButton(rightBtn);
+
+	var leftBtn = Ti.UI.BlackBerry.createNavButton({
+		title : "Left"
+	});
+	detailWindow.setLeftNavButton(leftBtn);
+	
 	///unable to find docs for ActionBarPlacement, so currently the only way I could create the overFlow menu on the right was to add more than 3 actions
 	
 	detailWindow.addAction('Action 1', 'images/icon-globe2.png', function(e){
